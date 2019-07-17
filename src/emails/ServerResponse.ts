@@ -15,8 +15,8 @@ class ServerResponse {
     return new ServerResponse(true, message, value, 200);
   }
 
-  static error(message: string, httpCode?: number) {
-    return new ServerResponse(false, message, null, httpCode);
+  static error(message: string, value?: any, httpCode?: number) {
+    return new ServerResponse(false, message, value, httpCode);
   }
 }
 
